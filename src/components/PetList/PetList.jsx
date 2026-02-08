@@ -1,15 +1,11 @@
 const PetList = (props) => {
-    // lets ensure we have data to work with before adding function
-    console.log(props)
-
-
     return (
-        <div>
+        <div className="sidebar-container">
             <h1>Pet List</h1>
-            <div>
+            <div className="list-container">
                 {
                 !props.pets.length ? (
-                    <h2>No Pets yet!</h2>
+                    <h2>No Pets Yet!</h2>
                 ) : (
                 <ul>
                     {
@@ -17,7 +13,7 @@ const PetList = (props) => {
                             return <li 
                             key={pet._id}
                             style={{cursor: "pointer", color: '#646CFF'}}
-                            onClick={() => props.onSelectPet(pet)}
+                            onClick={() => props.handleSelect(pet)}
                             >
                                 {pet.name}
                                 </li>
@@ -26,6 +22,9 @@ const PetList = (props) => {
                     </ul>
                 )}
             </div>
+            <button onClick={props.handleFormView}>
+                {props.isFormOpen ? "Close Form" : "New Pet"}
+            </button>
         </div>
     );
 }
