@@ -1,12 +1,16 @@
-import './app.css';
+import './App.css';
 import { useState, useEffect } from 'react';
 import * as petService from './services/petService'
 import PetList from './components/PetList/PetList';
+import PetDetail from './components/PetDetail/PetDetail'
 
 // src/App.jsx
 
 const App = () => {
   const [pets, setPets] = useState([]);
+  const [selectedPet, setSelectedPet] = useState(null);
+
+
 
   // Create a new useEffect
   useEffect(() => {
@@ -34,9 +38,16 @@ const App = () => {
     //})
   }, []);
 
+  const handleSelectPet = (pet) => {
+    setSelectedPet(pet);
+  };
+
   return (
-    <PetList pets={pets} />
-  )
+    <>
+    <PetList pets={pets} onSelectPet={handleSelectPet} />
+    <PetDetail selected ={selectedPet} />
+    </>
+  );
 };
 
 
