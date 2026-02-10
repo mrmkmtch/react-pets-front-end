@@ -56,7 +56,7 @@ Pet Tracker is a dashboard-style web application that allows users to create, vi
 
 1. **Clone the backend repository**
    ```bash
-   git clone https://git.generalassemb.ly/makadana/express-api-pets-back-end.git
+   git clone https://github.com/mrmkmtch/express-api-pets-back-end.git
    cd express-api-pets-back-end
    ```
 
@@ -106,7 +106,7 @@ Pet Tracker is a dashboard-style web application that allows users to create, vi
 
 1. **Clone the frontend repository**
    ```bash
-   git clone https://git.generalassemb.ly/makadana/react-pets-front-end.git
+   git clone https://github.com/mrmkmtch/react-pets-front-end.git
    cd react-pets-front-end
    ```
 
@@ -209,8 +209,8 @@ express-api-pets-back-end/
 This front-end application requires a backend API server. The service layer (`petService.js`) handles all API calls with full error handling.
 
 **Repository Links:**
-- **Frontend**: [https://git.generalassemb.ly/makadana/react-pets-front-end.git](https://git.generalassemb.ly/makadana/react-pets-front-end.git)
-- **Backend**: [https://git.generalassemb.ly/makadana/express-api-pets-back-end.git](https://git.generalassemb.ly/makadana/express-api-pets-back-end.git)
+- **Frontend**: [https://github.com/mrmkmtch/react-pets-front-end](https://github.com/mrmkmtch/react-pets-front-end)
+- **Backend**: [https://github.com/mrmkmtch/express-api-pets-back-end](https://github.com/mrmkmtch/express-api-pets-back-end)
 
 ## 🎨 Architecture Highlights
 
